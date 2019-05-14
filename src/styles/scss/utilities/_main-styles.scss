@@ -1,0 +1,128 @@
+/* ------ Base ------ */
+
+// This would just be a jumbotron class in Bootstrap
+// but we won't be using that
+
+.header-text {
+    font-family: $font-stack-primary;
+    font-size: 26px;
+    color: $color-primary-complement;
+    text-align: center;
+    margin: auto;
+    width: 80%;
+    padding: 10px;
+    background-image: linear-gradient(to right, $color-primary-dark, $color-primary, $color-primary-dark);
+  }
+  
+  // The original size of the svgs is MASSIVE
+  // Make sure they're scaled down to look like icons
+  // instead of posters
+  .img {
+    width: 10%;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 30%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  
+  ul {
+    width: 80%;
+    margin: auto;
+    padding: 0;
+  }
+  
+  // I love the card style that you see on sites like Google.
+  // The minimalistic approach is simple yet effective.
+  // I'm looking to emulate that here with the grocery items
+  li {
+    font-family: $font-stack-tertiary;
+    list-style-type: none;
+    margin: $gutter;
+    padding: 0;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+    div {
+      border-bottom: 3px solid black;
+      font-family: $font-stack-secondary;
+      font-size: 24px;
+    }
+  }
+
+  .fruit {
+    background-color: $color-grocery-blue;
+  }
+  
+  .beverage {
+    background-color: $color-grocery-yellow;
+  }
+
+  .dessert {
+    background-color: $color-grocery-green;
+  }
+
+  .pasta {
+    background-color: $color-grocery-red;
+  }
+
+  .dairy {
+    background-color: $color-grocery-purple;
+  }
+  
+  li:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  }
+  
+  .container {
+    display: flex;
+    flex-flow: row wrap;
+  }
+  
+  .col {
+    flex: 1 0 15%;
+  }
+  
+  
+  /* ------ Media Queries ------ */
+  
+  // Media Queries weren't specified for the project
+  // but I feel the lack of them would be unprofessional
+  // Coder's Note: Had a case of fat/crazy fingers
+  // Definitely typed but as butt... childish humor
+  
+  @media only screen and (max-width: $break-s) {
+    .container {
+      flex-direction: column;
+    }
+    .img {
+      width: 20%;
+    }
+    li {
+      padding-bottom: 3rem;
+    }
+  }
+  
+  @media only screen and (min-width: $break-m) {
+    .col {
+      flex: 1 per-line(2);
+    }
+    .img {
+      width: 20%;
+    }
+    li {
+      padding-bottom: 1rem;
+    }
+  }
+  
+  @media only screen and (min-width: $break-l) {
+    .col {
+      flex: 1 per-line(2);
+    }
+  }
+  
+  @media only screen and (min-width: $break-xl) {
+    .col {
+      flex: 1 per-line(4);
+    }
+  }
+  

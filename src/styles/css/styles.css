@@ -1,0 +1,113 @@
+/* ------ Base ------ */
+.header-text {
+  font-family: "Fugaz One", cursive;
+  font-size: 26px;
+  color: #f2d198;
+  text-align: center;
+  margin: auto;
+  width: 80%;
+  padding: 10px;
+  background-image: linear-gradient(to right, #10377b, #98b9f2, #10377b);
+}
+
+.img {
+  width: 10%;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 30%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+ul {
+  width: 80%;
+  margin: auto;
+  padding: 0;
+}
+
+li {
+  font-family: "Open Sans", sans-serif;
+  list-style-type: none;
+  margin: 5px;
+  padding: 0;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+}
+li div {
+  border-bottom: 3px solid black;
+  font-family: "Fresca", sans-serif;
+  font-size: 24px;
+}
+
+.fruit {
+  background-color: #dbe9f4;
+}
+
+.beverage {
+  background-color: #fcfdaf;
+}
+
+.dessert {
+  background-color: #98fb98;
+}
+
+.pasta {
+  background-color: #f88379;
+}
+
+.dairy {
+  background-color: #dcd0ff;
+}
+
+li:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.col {
+  flex: 1 0 15%;
+}
+
+/* ------ Media Queries ------ */
+@media only screen and (max-width: 767px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .img {
+    width: 20%;
+  }
+
+  li {
+    padding-bottom: 3rem;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .col {
+    flex: 1 48%;
+  }
+
+  .img {
+    width: 20%;
+  }
+
+  li {
+    padding-bottom: 1rem;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .col {
+    flex: 1 48%;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .col {
+    flex: 1 21%;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

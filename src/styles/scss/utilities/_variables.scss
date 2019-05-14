@@ -1,0 +1,29 @@
+// ------ Variables ------ */
+
+// Colors
+$color-primary: #98b9f2; // Jordy Blue
+$color-primary-complement: complement($color-primary);
+$color-primary-dark: darken($color-primary, 50%);
+// I went with pale colors to better contrast against the black
+// and be easier on the eyes. Heavily saturated colors can be
+// a literal eyesore for some people
+$color-grocery-blue: #dbe9f4; // Azureish White
+$color-grocery-yellow: #fcfdaf; // Very Pale Yellow
+$color-grocery-red: #f88379; // Tea Rose
+$color-grocery-green: #98fb98; // Pale Green
+$color-grocery-purple: #dcd0ff; // Pale Laveder
+
+// Fonts
+$font-stack-primary: "Fugaz One", cursive;
+$font-stack-tertiary: "Open Sans", sans-serif;
+$font-stack-secondary: 'Fresca', sans-serif;
+
+// Layout
+$max-width: 1000px;
+$gutter: 5px;
+
+// Break Points
+$break-s: 767px;
+$break-m: 768px;
+$break-l: 992px;
+$break-xl: 1200px;

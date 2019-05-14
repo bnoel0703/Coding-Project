@@ -1,0 +1,11 @@
+// ------ Functions ------
+
+@function px-to-pc($target, $context: $max-width) {
+    @return ($target / $context) * 100%;
+}
+
+@function per-line($items) {
+    $gutter-percentage: px-to-pc($gutter) * 2;
+    $gutter-total: $items * $gutter-percentage;
+    @return (100% / $items) - $gutter-total;
+}
